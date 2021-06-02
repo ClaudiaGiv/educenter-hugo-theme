@@ -8,6 +8,24 @@ body {
   color: $white;
 }
 
+// style all blockquotes, not just Bootstrap's default of class="blockquote"
+// see: node_modules/bootstrap/scss/_type.scss
+
+blockquote {
+  font-family: "Playfair Display", serif;
+  border-left: 5px solid $primary-color;
+  font-size: 30px;
+  font-style: italic;
+  letter-spacing: -0.36px;
+  line-height: 44.4px;
+  overflow-wrap: break-word;
+  margin: 55px 0 33px 0;
+  /* text-align: center; */
+  color: rgba(0, 0, 0, 0.68);
+  padding: 0 0 0 30px;
+}
+
+
 /* preloader */
 
 .preloader {
@@ -25,7 +43,7 @@ body {
 
 ol,
 ul {
-  list-style-type: none;
+  list-style-type: initial;
   margin: 0px;
 }
 
@@ -40,7 +58,7 @@ a:focus {
   text-decoration: none;
 }
 
-a{
+a {
   color: inherit;
 }
 
@@ -60,18 +78,19 @@ a:hover {
 }
 
 a.text-primary:hover {
-  color: $primary-color!important;
+  color: $primary-color !important;
 }
 
 a.text-light:hover {
-  color: $primary-color!important;
+  color: $primary-color !important;
 }
 
-h4{
+h4 {
   transition: .2s ease;
 }
-a h4{
-  &:hover{
+
+a h4 {
+  &:hover {
     color: $primary-color;
   }
 }
@@ -153,7 +172,7 @@ a h4{
   color: $text-color-light !important;
 }
 
-.text-lighten{
+.text-lighten {
   color: #d6d6e0 !important;
 }
 
@@ -223,11 +242,11 @@ a h4{
   }
 }
 
-.vertical-align-middle{
+.vertical-align-middle {
   vertical-align: middle;
 }
 
-.icon-md{
+.icon-md {
   font-size: 36px;
 }
 
@@ -258,12 +277,14 @@ a h4{
 
 /* /page title */
 
-.list-styled{
+.list-styled {
   padding-left: 25px;
-  li{
+
+  li {
     position: relative;
     margin-bottom: 15px;
-    &::before{
+
+    &::before {
       position: absolute;
       content: "";
       height: 10px;
@@ -276,15 +297,14 @@ a h4{
   }
 }
 
-textarea.form-control{
+textarea.form-control {
   height: 200px;
   padding: 20px;
 }
 
-#map_canvas{
+#map_canvas {
   height: 500px;
 }
-
 
 
 .post-thumb-sm {
@@ -295,6 +315,7 @@ textarea.form-control{
 /* pagination */
 .pagination {
   justify-content: center;
+
   .page-item {
     margin: 0 10px;
 
@@ -405,7 +426,7 @@ textarea.form-control{
   }
 }
 
-.teacher-thumb-sm{
+.teacher-thumb-sm {
   height: 85px;
   width: 85px;
   object-fit: cover;

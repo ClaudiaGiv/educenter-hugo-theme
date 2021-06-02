@@ -16,57 +16,67 @@ body {
   color: $text-color;
 }
 
-p, .paragraph {
+//a {
+//  font-weight: 300;
+//  color: $text-color;
+//  font-size: 14px;
+//  line-height: 1.58;
+//  letter-spacing: -0.03px;
+//  font-family: $primary-font;
+//}
+
+p, i, .paragraph {
   font-weight: 400;
   color: $text-color;
-  font-size: 15px;
-  line-height: 1.9;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -0.03px;
   font-family: $primary-font;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   color: $text-color-dark;
   font-family: $secondary-font;
   font-weight: 700;
   line-height: 1.2;
 }
 
-h1, .h1{
+h1, .h1 {
   font-size: 60px;
   @include mobile {
     font-size: 45px;
   }
 }
 
-h2, .h2{
+h2, .h2 {
   font-size: 40px;
   @include mobile {
     font-size: 30px;
   }
 }
 
-h3, .h3{
+h3, .h3 {
   font-size: 25px;
   @include mobile {
     font-size: 20px;
   }
 }
 
-h4, .h4{
+h4, .h4 {
   font-size: 20px;
   @include mobile {
     font-size: 18px;
   }
 }
 
-h5, .h5{
+h5, .h5 {
   font-size: 18px;
   @include mobile {
     font-size: 16px;
   }
 }
 
-h6, .h6{
+h6, .h6 {
   font-size: 16px;
   @include mobile {
     font-size: 14px;
